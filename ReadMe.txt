@@ -1,6 +1,6 @@
                            啄木鸟(woodpecker)自动化测试工具使用手册
 GitHub下载地址：https://github.com/xudashen/woodpecker
-微云下载地址：
+微云下载地址：链接： https://share.weiyun.com/5s2y0vy （密码：vmYr）
 
 
 Maven仓库注册：
