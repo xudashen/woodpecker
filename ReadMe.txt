@@ -1,13 +1,13 @@
                            啄木鸟(woodpecker)自动化测试工具使用手册
 GitHub下载地址：https://github.com/xudashen/woodpecker
-微云下载地址：链接： https://share.weiyun.com/5s2y0vy （密码：vmYr）
+微云下载地址：链接： https://share.weiyun.com/5s2y0vy （密码：1fQc）
 
 
 Maven仓库注册：
     将lib目录下的install_maven.txt文件内容，执行一遍。
     注意：
     1.jar包下载地址：
-    链接： https://share.weiyun.com/5j7fzLj （密码：ZaqK）
+    链接： https://share.weiyun.com/5s2y0vy （密码：1fQc）
     将下载下来的jar，放到lib目录下去。
     2.需cd至lib目录下执行，否则会报错(提示文件不存在)。
 
