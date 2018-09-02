@@ -1,0 +1,18 @@
+#spring:
+#  profiles:
+#    active: 24
+autotest:
+  api:
+    enable: true
+    maxConnectionNum: 2
+    maxPerRoute: 1
+    socketTimeout: 30000
+    connectTimeout: 10000
+    connectionRequestTimeout: 5000
+    retryTimes: 3
+    keepAliveTimeOut: 30000
+    idleTimeout: 30
+    taskTimer: 60
+  ui:
+    driverPath: src/main/resources/chromedriver
+    enable: false

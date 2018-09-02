@@ -1,0 +1,12 @@
+
+
+mvn install:install-file -Dfile=QRCode.jar -DgroupId=QRCode -DartifactId=QRCode -Dversion=3.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=commons.jar -DgroupId=com.sword -DartifactId=commons -Dversion=2.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=selenium.jar -DgroupId=com.sword -DartifactId=web-controller -Dversion=2.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=selenium2.jar -DgroupId=com.sword -DartifactId=web-controller2 -Dversion=2.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=auto-test.jar -DgroupId=com.sword -DartifactId=auto-test -Dversion=2.0 -Dpackaging=jar
+

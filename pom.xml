@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.woodpecker</groupId>
+    <artifactId>woodpecker</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>testcase</module>
+        <module>dao</module>
+        <module>service</module>
+        <module>commons</module>
+        <module>controller</module>
+        <module>mock</module>
+    </modules>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <argLine>-Dfile.encoding=UTF-8</argLine>
+        <java.version>1.8</java.version>
+        <woodpecker.version>1.0</woodpecker.version>
+        <sword.version>2.0</sword.version>
+        <compiler.version>3.8.0</compiler.version>
+        <surefire.version>2.22.0</surefire.version>
+        <rest-assured.version>3.1.1</rest-assured.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- testcase -->
+            <dependency>
+                <groupId>com.woodpecker</groupId>
+                <artifactId>testcase</artifactId>
+                <version>${woodpecker.version}</version>
+            </dependency>
+            <!-- commons -->
+            <dependency>
+                <groupId>com.woodpecker</groupId>
+                <artifactId>commons</artifactId>
+                <version>${woodpecker.version}</version>
+            </dependency>
+            <!-- dao -->
+            <dependency>
+                <groupId>com.woodpecker</groupId>
+                <artifactId>dao</artifactId>
+                <version>${woodpecker.version}</version>
+            </dependency>
+            <!-- service -->
+            <dependency>
+                <groupId>com.woodpecker</groupId>
+                <artifactId>service</artifactId>
+                <version>${woodpecker.version}</version>
+            </dependency>
+            <!-- controller -->
+            <dependency>
+                <groupId>com.woodpecker</groupId>
+                <artifactId>controller</artifactId>
+                <version>${woodpecker.version}</version>
+            </dependency>
+            <!-- mock -->
+            <dependency>
+                <groupId>com.woodpecker</groupId>
+                <artifactId>mock</artifactId>
+                <version>${woodpecker.version}</version>
+            </dependency>
+            <!-- -->
+            <dependency>
+                <groupId>com.sword</groupId>
+                <artifactId>auto-test</artifactId>
+                <version>${sword.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sword</groupId>
+                <artifactId>commons</artifactId>
+                <version>${sword.version}</version>
+            </dependency>
+            <!-- io.rest-assured/rest-assured -->
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>${rest-assured.version}</version>
+            </dependency>
+            <!-- io.rest-assured/json-schema-validator -->
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>json-schema-validator</artifactId>
+                <version>${rest-assured.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

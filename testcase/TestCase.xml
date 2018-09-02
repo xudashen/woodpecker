@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="自定义的测试套件1">
+    <!--<test name="测试1" preserve-order="true">-->
+    <!--<classes>-->
+    <!--<class name="com.woodpecker.tc.demo.Demo1TC">-->
+    <!--<methods>-->
+    <!--<include name="openBaidu"/>-->
+    <!--</methods>-->
+    <!--</class>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="测试2" preserve-order="false">
+        <classes>
+            <class name="com.woodpecker.tc.demo.Demo2TC">
+                <parameter name="url" value="https://login-user.kugou.com/v1/login/"/>
+                <parameter name="username" value="12345678901"/>
+                <parameter name="password" value="123456abc"/>
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
