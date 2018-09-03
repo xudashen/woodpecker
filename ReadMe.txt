@@ -28,15 +28,21 @@ POM依赖：
 
 
 Case使用：
-    TestCase，需继承com.sword.autotest.framework.testcase.BaseTestCase类(也可以间接继承)。
+    TestCase，可以继承com.sword.autotest.framework.testcase.BaseTestCase类(也可以间接继承)，这样可以直接运行，
+    并继承到一些有用的字段和监听器。你也可以自己去继承AbstractTestNGSpringContextTests类，但需要自己加一些自己需要的监听器。
     没有其他要求了。
     其他功能请查阅TestNG，Case层是采用TestNG进行驱动的。
+    
+    BaseTestCase类介绍：自带了测试报告生成监听器，继承了AbstractTestNGSpringContextTests类。
+    最重要的是：内部定义了Api对象，可供消费端直接发送http请求，省去了自己定义的过程。
+   
+    Api类介绍：首先，是一个接口。这个接口里面定义了一系列的发送http请求的方法。当调用这写方法的时候，程序会自动发送响应的http请求。
+    Api是这个框架中非常重要的有个类。
 
 
 
 API使用：
-	
-    @AutoHttpRequest(ignore = false)：会对接口/类对象进行自动注入。
+    @AutoHttpRequest(ignore = false)：会对接口/类对象进行自动注入。但这个类上必须加上@AutoProxy注解才行，否则在使用的时候回报空指针异常。
     如果ignore为false表示一定要对其注入，要求一定要在配置文件中将autotest.api.enable设置为true，否则会报错。
     如果ignore为true表示忽略注入，程序不会为其进行自动注入，也就是对象引用为null。
 
