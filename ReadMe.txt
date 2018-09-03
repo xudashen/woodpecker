@@ -3,6 +3,12 @@ GitHub下载地址：https://github.com/xudashen/woodpecker
 微云下载地址：链接： https://share.weiyun.com/5s2y0vy （密码：1fQc）
 
 
+
+环境准备：
+  jdk1.8、maven3、idea/eclipse
+  
+
+
 Maven仓库注册：
     将lib目录下的install_maven.txt文件内容，执行一遍。
     注意：
