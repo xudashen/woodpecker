@@ -19,6 +19,11 @@ Maven仓库注册：
 
 
 
+工程导入：
+    idea在导入工程的时候，请选择maven的方式导入。否则会提示找不到依赖。
+
+
+
 POM依赖：
     <dependency>
         <groupId>com.sword</groupId>
