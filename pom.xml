@@ -15,6 +15,7 @@
         <module>commons</module>
         <module>controller</module>
         <module>mock</module>
+        <module>framework</module>
     </modules>
 
 
@@ -67,6 +68,12 @@
             <dependency>
                 <groupId>com.woodpecker</groupId>
                 <artifactId>mock</artifactId>
+                <version>${woodpecker.version}</version>
+            </dependency>
+            <!-- framework -->
+            <dependency>
+                <groupId>com.woodpecker</groupId>
+                <artifactId>framework</artifactId>
                 <version>${woodpecker.version}</version>
             </dependency>
             <!-- -->

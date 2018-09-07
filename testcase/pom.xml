@@ -36,6 +36,11 @@
             <groupId>com.woodpecker</groupId>
             <artifactId>service</artifactId>
         </dependency>
+        <!-- framework -->
+        <dependency>
+            <groupId>com.woodpecker</groupId>
+            <artifactId>framework</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.sword</groupId>
             <artifactId>auto-test</artifactId>

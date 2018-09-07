@@ -1,0 +1,97 @@
+# for Mac OS X System Files
+.DS_Store
+Thumbs.db
+
+# for emacs
+*~
+[#]*[#]
+
+# for Eclipse
+*.project
+
+# for Logs and databases
+*.log
+
+# remove SVN
+.svn
+
+# for Xcode
+.*.swp
+.clang_complete
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# for IDEA
+*/build/*
+.idea/*
+*.iml
+/out/*
+target/
+.idea
+*/target
+*/*.iml
+*.iml
+
+
+# Compiled class file
+*.class
+/target/
+/test-output/
+*/test-output/
+/test-output/html/
+*/test-output/html
+/log/
+*/lib
+/lib/
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Html file
+*.Html
+*.html
+*.css
+*.js
+
+# mac os
+DS_Store
+.DS_Store
+*.DS_Store
+
+# image file
+*.jpg
+*.png
+*.bmp
+*.jpeg
+
+#ide file
+*.iml
+*.idea
+/.idea/
+.classpath
+.checkstyle
+.project
+.mymetadata
+.settings/
+/.settings/
+
+#etc
+*.exe
+
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

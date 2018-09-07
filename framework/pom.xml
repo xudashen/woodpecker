@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service</artifactId>
+    <artifactId>framework</artifactId>
     <packaging>jar</packaging>
 
 
@@ -26,31 +26,15 @@
             <groupId>com.woodpecker</groupId>
             <artifactId>commons</artifactId>
         </dependency>
-        <!-- dao -->
-        <dependency>
-            <groupId>com.woodpecker</groupId>
-            <artifactId>dao</artifactId>
-        </dependency>
-        <!-- framework -->
-        <dependency>
-            <groupId>com.woodpecker</groupId>
-            <artifactId>framework</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>com.sword</groupId>
             <artifactId>auto-test</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.sword</groupId>
             <artifactId>commons</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>json-schema-validator</artifactId>
         </dependency>
     </dependencies>
 
@@ -80,3 +64,4 @@
 
 
 </project>
+
