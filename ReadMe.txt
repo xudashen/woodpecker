@@ -13,7 +13,7 @@ Maven仓库注册：
     将lib目录下的install_maven.txt文件内容，执行一遍。
     注意：
     1.jar包下载地址：
-    链接： https://share.weiyun.com/5s2y0vy （密码：1fQc）
+    链接：https://share.weiyun.com/5knrpNr 密码：gc7d65
     将下载下来的jar，放到lib目录下去。
     2.需cd至lib目录下执行，否则会报错(提示文件不存在)。
 
